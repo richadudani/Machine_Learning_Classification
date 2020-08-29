@@ -51,19 +51,20 @@ Based on below model results, I have determined the responses to below questions
 
 ![Results Summary](Images/Result_Table.png)
 
-<b> * Which model had the best balanced accuracy score? <b> 
+<b> * Which model had the best balanced accuracy score? </b> 
 
-        Naïve Random Oversampling and Over and Under Sampling (SMOTEENN) had the best balanced accuracy score each at 99.47%. The balanced accuracy score for Naïve Random Oversampling is 99.46% while for Undersampling is 99.33%
+Naïve Random Oversampling and Over and Under Sampling (SMOTEENN) had the best balanced accuracy score each at 99.47%. The balanced accuracy score for Naïve Random Oversampling is 99.46% while for Undersampling is 99.33%. Accuracy Score depicts how often a model is correct - the ratio of correctly predicted observations to the total number of observations. Hence, Naïve Random Oversampling and Over and Under Sampling (SMOTEENN) are better performing models.
 
-<b> * Which model had the best recall score? <b> 
+<b> * Which model had the best recall score? </b> 
 
-        All the models except one with undersampling have performed equally good in terms of recall score of  100%, implying models have correctly predicted false-negatives.
->
-<b> * Which model had the best geometric mean score? <b> 
+Logistic Regression with SMOTE Oversampling is the best model with recall score of 99.7% which implies that most of the high risk loans are correctly classified as high risk. There are only 3 loans which are actually high risk and classifed by both the models as low risk.This is followed by Logistic Regression with Naïve Random Oversampling and with Over & Under Sampling (SMOTEENN) models scored at 99.5%. Model Logistic Regression with Undersampling (ClusterCentroids) has performed the least in terms of recall score.
 
-        All the models have scored same on the geometric mean score.
+![Results Summary](Images/Result_Table_3.png)>
 
-        Overall, logistic regression with under sampling is a laggard with respect to others.
+<b> * Which model had the best geometric mean score? </b> 
+
+All the models have scored same on the geometric mean score. 
+Overall, logistic regression with under sampling is a laggard with respect to others.
 
     
 #### Ensemble Learning
@@ -86,19 +87,21 @@ Based on below model results, I have answered the following questions:
 
 ![Results Summary](Images/Result_Table_1.png)
 
-<b> * Which model had the best balanced accuracy score? <b>
+<b> * Which model had the best balanced accuracy score? </b>
         
-        The Easy Ensemble Classifier model has balanced accuracy score of 99.45% while Balanced Random Forest Classifier has 99.37%. Hence Ensemble Classifier model is better.
+The Easy Ensemble Classifier model has balanced accuracy score of 99.45% while Balanced Random Forest Classifier has 99.37%. Accuracy Score depicts how often a model is correct - the ratio of correctly predicted observations to the total number of observations. Hence Ensemble Classifier model is better.
 
-<b> * Which model had the best recall score? <b>
+<b> * Which model had the best recall score? </b>
 
-        Both the models have the same recall scores.
+Both the models have the same recall scores of nearly 100% which implies that most of the high risk loans are correctly classified as high risk. There are only 3 loans which are actually high risk and classifed by both the models as low risk.
 
-<b> * Which model had the best geometric mean score? <b>
+![Results Summary](Images/Result_Table_2.png)
 
-        Both the models perform equal in terms of geometric mean score.
+<b> * Which model had the best geometric mean score? </b>
 
-* What are the top three features?
+Both the models perform equal in terms of geometric mean score.
 
-        Top three features of importance are Borrower's Income, Interest Rate and Debt to Income Ratio which contributes nearly 60% towards an outcome/decision on a loan status. Additionaly, total debt and loan size are factors covering another 29%. Rest of the factors are not as important when coming to decide if a loan is low risk or high.
+<b> * What are the top three features? </b>
+
+Top three features of importance are Borrower's Income, Interest Rate and Debt to Income Ratio which contributes nearly 60% towards an outcome/decision on a loan status. Additionaly, total debt and loan size are factors covering another 29%. Rest of the factors are not as important when coming to decide if a loan is low risk or high.
 - - -
