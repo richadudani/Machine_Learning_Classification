@@ -49,7 +49,7 @@ Each of the above resampled data was then used to evaluate logistic regression m
 
 Based on below model results, I have determined the responses to below questions as outlined:
 
-![Results Summary](Images/Result_Table.png)
+![Results Summary](Images/Result_Table.PNG)
 
 <b> * Which model had the best balanced accuracy score? </b> 
 
@@ -59,7 +59,7 @@ Naïve Random Oversampling and Over and Under Sampling (SMOTEENN) had the best b
 
 Logistic Regression with SMOTE Oversampling is the best model with recall score of 99.7% which implies that most of the high risk loans are correctly classified as high risk. There are only 3 loans which are actually high risk and classifed by both the models as low risk.This is followed by Logistic Regression with Naïve Random Oversampling and with Over & Under Sampling (SMOTEENN) models scored at 99.5%. Model Logistic Regression with Undersampling (ClusterCentroids) has performed the least in terms of recall score.
 
-![Results Summary](Images/Result_Table_3.png)>
+![Results Summary](Images/Result_Table_3.PNG)>
 
 <b> * Which model had the best geometric mean score? </b> 
 
@@ -85,7 +85,7 @@ Following steps were undertaken for each model post scaling the data:
 
 Based on below model results, I have answered the following questions:
 
-![Results Summary](Images/Result_Table_1.png)
+![Results Summary](Images/Result_Table_1.PNG)
 
 <b> * Which model had the best balanced accuracy score? </b>
         
@@ -95,7 +95,7 @@ The Easy Ensemble Classifier model has balanced accuracy score of 99.45% while B
 
 Both the models have the same recall scores of nearly 100% which implies that most of the high risk loans are correctly classified as high risk. There are only 3 loans which are actually high risk and classifed by both the models as low risk.
 
-![Results Summary](Images/Result_Table_2.png)
+![Results Summary](Images/Result_Table_2.PNG)
 
 <b> * Which model had the best geometric mean score? </b>
 
